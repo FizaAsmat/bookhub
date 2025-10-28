@@ -20,10 +20,10 @@ from django.urls import path, include
 
 urlpatterns = [
     # library app first
-    path('api/library/', include('library.urls')),
+    path('library/', include('library.urls')),
 
     # accounts / auth after library
-    path('api/accounts/', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
 
     # admin and other global routes
     path('admin/', admin.site.urls),
