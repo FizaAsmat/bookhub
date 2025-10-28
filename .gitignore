@@ -11,6 +11,7 @@ venv/
 env/
 ENV/
 
+.env
 # Django
 *.log
 media/
@@ -22,6 +23,8 @@ celerybeat.pid
 .vscode/
 .idea/
 *.swp
+
+db.sqlite3
 
 # OS files
 .DS_Store
