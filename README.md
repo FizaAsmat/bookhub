@@ -41,7 +41,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ## Database Setup
+Add this file in your project root:
+```bash
 
+SECRET_KEY='django-insecure-@^6)-+g3=d(d5rubai&r)rr7%(e#8x(xxrjekj2wvlkabr%ktr'
+DEBUG=True
+DATABASE_URL=postgres://username:password@localhost:5432/library_db
+REDIS_URL=redis://127.0.0.1:6379/0
+```
 
 ## Apply Database Migrations
 ```bash
