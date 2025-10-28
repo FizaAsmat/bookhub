@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'bookhub.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': os.getenv('django.db.backends.postgresql'),
         'NAME': os.getenv('bookhub_db'),
         'USER': os.getenv('postgres'),
         'PASSWORD': os.getenv('supernewpassword'),
